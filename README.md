@@ -13,6 +13,7 @@ In this two-part workshop, you will experiment with different strategies and tec
 
 ## References and Links
 
+- [Insomnia](https://insomnia.rest/download) 
 - A [list of public APIs](https://github.com/public-apis/public-apis)
 - Learn [Python the hard way](https://learnpythonthehardway.org/book/)
 - [Web scraper in python](https://first-web-scraper.readthedocs.io/en/latest/) great and exhaustive tutorial
