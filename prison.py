@@ -1,21 +1,30 @@
 import requests
 from bs4 import BeautifulSoup
 
-url = 'https://www.prisonstudies.org/world-prison-brief-data'
+url = "https://en.wikipedia.org/wiki/List_of_countries_by_incarceration_rate"
+
 response = requests.get(url)
+soup = BeautifulSoup(response.text, "html.parser")
 
-soup = BeautifulSoup(response.text, 'html.parser')
+# Find the table with the incarceration rate data
+table = soup.find("table", {"class": "wikitable"})
 
-table = soup.find('table', {'id': 'table_2'})
-rows = table.find_all('tr')
+# Extract the table headers
+headers = []
+for th in table.find_all("th"):
+    headers.append(th.text.strip())
 
-for row in rows:
-    cells = row.find_all('td')
-    if len(cells) == 5:
-        country = cells[0].text.strip()
-        prison_population = int(cells[1].text.replace(',', ''))
-        rate_per_100000 = float(cells[2].text.replace(',', ''))
-        women_prisoners = int(cells[3].text.replace(',', ''))
-        percentage_women = float(cells[4].text.replace('%', ''))
+# Extract the table rows
+rows = []
 
-        print(country, prison_population, rate_per_100000, women_prisoners, percentage_women)
+for tr in table.find_all("tr")[2:]:
+    row = {}
+    tds = tr.find_all("td")
+    row[headers[0]] = tds[0].text.strip()
+    row[headers[1]] = tds[1].text.strip()
+    row[headers[2]] = tds[2].text.strip()
+    row[headers[3]] = tds[3].text.strip()
+    rows.append(row)
+
+# Print the first row of data
+print(rows[0])
