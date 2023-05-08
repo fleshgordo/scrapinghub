@@ -1,4 +1,4 @@
-# Scraping the web - colabor hub
+# Scraping the web - Colabor hub
 
 Mini-workshop and introduction into the world of scraping/scrapism
 
