@@ -5,7 +5,7 @@ Mini-workshop and introduction into the world of scraping/scrapism
 Click on below links to open the handbooks in Colab:
 
 - [Python Basics](001_python_first_steps.ipynb) | [Python Basics in German](001_python_first_steps_DE.ipynb)
-- [Scraping]()
+- [Scraping](002_scraping.ipynb)
 
 ## Description
 
