@@ -13,13 +13,17 @@ In this two-part workshop, you will experiment with different strategies and tec
 
 ## References and Links
 
-- [Insomnia](https://insomnia.rest/download) 
 - A [list of public APIs](https://github.com/public-apis/public-apis)
 - Learn [Python the hard way](https://learnpythonthehardway.org/book/)
 - [Web scraper in python](https://first-web-scraper.readthedocs.io/en/latest/) great and exhaustive tutorial
 - [Scrapism](https://scrapism.lav.io/) by Sam Levigne (great stuff) 
-- [Curl converter](https://curlconverter.com/python/) prepares request in correct format
+
+## Useful tools
+
+- [Insomnia](https://insomnia.rest/download) 
+- [http://bboxfinder.com/](Geo lat/lng boxfinder)
 - [Convert UNIX time](https://www.epochconverter.com/)
+- [Curl converter](https://curlconverter.com/python/) prepares request in correct format
 
 ## Tags
 python, datascience, creativecoding, web scraping
