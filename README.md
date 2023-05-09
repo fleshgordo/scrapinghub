@@ -21,7 +21,7 @@ In this two-part workshop, you will experiment with different strategies and tec
 ## Useful tools
 
 - [Insomnia](https://insomnia.rest/download) 
-- [http://bboxfinder.com/](Geo lat/lng boxfinder)
+- [Geo lat/lng boxfinder](http://bboxfinder.com/)
 - [Convert UNIX time](https://www.epochconverter.com/)
 - [Curl converter](https://curlconverter.com/python/) prepares request in correct format
 
