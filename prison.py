@@ -1,5 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
+import pprint
 
 url = "https://en.wikipedia.org/wiki/List_of_countries_by_incarceration_rate"
 
@@ -23,8 +24,8 @@ for tr in table.find_all("tr")[2:]:
     row[headers[0]] = tds[0].text.strip()
     row[headers[1]] = tds[1].text.strip()
     row[headers[2]] = tds[2].text.strip()
-    row[headers[3]] = tds[3].text.strip()
+    #row[headers[3]] = tds[3].text.strip()
     rows.append(row)
 
 # Print the first row of data
-print(rows[0])
+pprint.pp(rows)
